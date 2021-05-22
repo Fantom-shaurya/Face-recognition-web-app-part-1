@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+
+    
+    
+      <h1 class=" heading">Face recognition web app</h1>
+
+      <br><br>
+
+      <p style="font-size: 22px;color: white;">Model is trained to identify the following people: </p>
+<div>
+    <br>
+    <b class=" btn btn-primary Objects_name">
+        Father
+    </b>
+    <br>
+    <br>
+    <b class=" btn btn-primary Objects_name">
+      Mother
+  </b>
+  <br>
+    <br>
+    <b class=" btn btn-primary Objects_name">
+      Brother
+  </b>
+  <br>
+    <br>
+    <b class=" btn btn-primary Objects_name">
+      Myself
+  </b>
+
+</div>
+  <br>
+  <br>    
+      
+
+      
+      <label>Webcam View - </label>
+      
+      <div id="camera">
+
+      </div>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+    
+    <button class="btn btn-warning" onclick="capture_recognise()">Captue and Idendify</button>
+    <br>
+    <br>
+
+      <span>
+        <p style="font-size: 20px; color: white;">Object :&nbsp;&nbsp;&nbsp;<p style="font-size: 20px; color: white;">Accuracy :<span id="result_object_accuracy"></span>  </p><span id="result_object_name"></span>  </p>
+      
+      </span>
+    
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
